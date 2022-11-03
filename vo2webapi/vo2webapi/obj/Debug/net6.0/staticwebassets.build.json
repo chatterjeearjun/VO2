@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "jR4o4ZgZzpBEp5o80mqi+ThiFHZiuLXplgTgs+NUhzI=",
+  "Source": "vo2webapi",
+  "BasePath": "_content/vo2webapi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
