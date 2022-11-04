@@ -12,10 +12,12 @@ namespace vo2webapi.Controllers
     };
 
         private readonly ILogger<WeatherForecastController> _logger;
+        private vo2context _companyContext;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, vo2context companyContext)
         {
             _logger = logger;
+            _companyContext = companyContext;
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
@@ -29,5 +31,23 @@ namespace vo2webapi.Controllers
             })
             .ToArray();
         }
+
+        //[Route("GetActors")]
+        //public IEnumerable<tblActors> GetActors()
+        //{
+        //    return _companyContext.tblActors.ToList();
+        //}
+
+        //[Route("GetActorsFees")]
+        //public IEnumerable<tblMovies> GetActorsFees()
+        //{
+        //    return _companyContext.tblMovies.ToList();
+        //}
+
+        //[Route("GetActorsFeesCondition")]
+        //public IEnumerable<tblActors> GetActorsFeesCondition()
+        //{
+        //    return _companyContext.tblActors.ToList();
+        //}
     }
 }
